@@ -35,11 +35,11 @@
         <module>sq-ch03-ex4</module>
         <module>sq-ch03-ex5</module>
         <module>sq-ch03-ex6</module>
-        <module>sq-ch03-ex7</module><!-- -->
+<!--        <module>sq-ch03-ex7</module>&lt;!&ndash; &ndash;&gt;-->
         <module>sq-ch03-ex8</module>
         <module>sq-ch03-ex9</module><!-- -->
         <module>sq-ch03-ex10</module><!-- -->
-        <module>sq-ch04-ex1</module>
+<!--        <module>sq-ch04-ex1</module>-->
         <module>sq-ch04-ex2</module>
         <module>sq-ch04-ex3</module>
         <module>sq-ch04-ex4</module>
