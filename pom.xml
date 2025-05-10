@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.springstartshere</groupId>
+    <artifactId>spring-start-here-parent</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <name>Spring Start Here Book Examples</name>
+    <description>Parent project for all Spring Start Here book examples</description>
+
+    <properties>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <spring.version>5.3.8</spring.version>
+        <spring.boot.version>2.5.2</spring.boot.version>
+    </properties>
+
+    <modules>
+        <module>sq-ch02-ex1</module>
+        <module>sq-ch02-ex2</module>
+        <module>sq-ch02-ex3</module>
+        <module>sq-ch02-ex4</module>
+        <module>sq-ch02-ex5</module>
+        <module>sq-ch02-ex6</module>
+        <module>sq-ch02-ex7</module>
+        <module>sq-ch02-ex8</module>
+        <module>sq-ch03-ex1</module>
+        <module>sq-ch03-ex2</module>
+        <module>sq-ch03-ex3</module>
+        <module>sq-ch03-ex4</module>
+        <module>sq-ch03-ex5</module>
+        <module>sq-ch03-ex6</module>
+        <module>sq-ch03-ex7</module><!-- -->
+        <module>sq-ch03-ex8</module>
+        <module>sq-ch03-ex9</module><!-- -->
+        <module>sq-ch03-ex10</module><!-- -->
+        <module>sq-ch04-ex1</module>
+        <module>sq-ch04-ex2</module>
+        <module>sq-ch04-ex3</module>
+        <module>sq-ch04-ex4</module>
+        <module>sq-ch04-ex5</module>
+        <module>sq-ch04-ex6</module>
+        <module>sq-ch04-ex7</module>
+        <module>sq-ch05-ex1</module>
+        <module>sq-ch05-ex2</module>
+        <module>sq-ch05-ex3</module>
+        <module>sq-ch05-ex4</module>
+        <module>sq-ch05-ex5</module>
+        <module>sq-ch05-ex6</module>
+        <module>sq-ch05-ex7</module>
+        <module>sq-ch06-ex1</module>
+        <module>sq-ch06-ex2</module>
+        <module>sq-ch06-ex3</module>
+        <module>sq-ch06-ex4</module>
+        <module>sq-ch06-ex5</module>
+        <module>sq-ch06-ex6</module>
+        <module>sq-ch06-ex7</module>
+        <module>sq-ch07-ex1</module>
+        <module>sq-ch08-ex1</module>
+        <module>sq-ch08-ex2</module>
+        <module>sq-ch08-ex3</module>
+        <module>sq-ch08-ex4</module>
+        <module>sq-ch08-ex5</module>
+        <module>sq-ch08-ex6</module>
+        <module>sq-ch09-ex1</module>
+        <module>sq-ch09-ex2</module>
+        <module>sq-ch09-ex3</module>
+        <module>sq-ch10-ex1</module>
+        <module>sq-ch10-ex2</module>
+        <module>sq-ch10-ex3</module>
+        <module>sq-ch10-ex4</module>
+        <module>sq-ch10-ex5</module>
+        <module>sq-ch10-ex6</module>
+        <module>sq-ch10-ex7</module>
+        <module>sq-ch11-ex1</module>
+        <module>sq-ch11-ex2</module>
+        <module>sq-ch11-ex3</module>
+        <module>sq-ch11-payments</module>
+        <module>sq-ch12-ex1</module>
+        <module>sq-ch12-ex2</module>
+        <module>sq-ch12-ex3</module><!-- -->
+        <module>sq-ch13-ex1</module>
+        <module>sq-ch13-ex2</module>
+        <module>sq-ch14-ex1</module>
+        <module>sq-app2-ex1</module>
+    </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- Spring Core -->
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-context</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+            
+            <!-- Spring Boot Dependencies -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring.boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.8.1</version>
+                    <configuration>
+                        <source>${maven.compiler.source}</source>
+                        <target>${maven.compiler.target}</target>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+</project>
