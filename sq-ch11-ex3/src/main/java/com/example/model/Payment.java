@@ -1,23 +1,35 @@
 package com.example.model;
 
+import java.time.LocalDateTime;
+
 public class Payment {
 
-  private String id;
-  private double amount;
+    private String id;
+    private double amount;
+    private LocalDateTime dateTime;
 
-  public String getId() {
-    return id;
-  }
+    public LocalDateTime getDateTime() {
+        return dateTime;
+    }
 
-  public void setId(String id) {
-    this.id = id;
-  }
+    public void setDateTime(LocalDateTime dateTime) {
+        this.dateTime = dateTime;
+    }
 
-  public double getAmount() {
-    return amount;
-  }
+    public String getId() {
+        return id;
+    }
 
-  public void setAmount(double amount) {
-    this.amount = amount;
-  }
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public double getAmount() {
+        return amount;
+    }
+
+    public void setAmount(double amount) {
+        this.amount = amount;
+    }
+
 }
